@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0;   
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
@@ -14,14 +14,19 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
+    align-items: center;
+
 }
 
 .instagram-wrapper {
+    min-height: calc(100vh - 70px);
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: center; /*vertical*/
+    justify-content: start; /*horizontal*/
     width: 58%; 
+    /*height: 100vh;*/
 }
 
 .instagram-phone { 
@@ -37,16 +42,16 @@ body {
 
 .instagram-continue {
     display: flex;
-    align-items: center; 
-    justify-content: space-around; 
-    flex-direction: column;
+    align-items: center; /*horizoltal*/
+    justify-content: space-around; /*vertical*/ 
+    flex-direction: column; /*inverte eixos*/
     width: 50%;
-    min-height: 38rem; 
+    min-height: 38rem;  
 }
 
 .group {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: center;
     flex-direction: column;
     background-color: #ffeef1;
@@ -89,6 +94,8 @@ body {
 
 .not-account {
     color: rgb(160, 160, 160);
+    padding: 0.2rem;
+    
 }
 
 .link-pink {
@@ -104,6 +111,10 @@ body {
     padding: 0.3rem 0; 
 }
 
+.get-app{
+    color: #f7769c;
+}
+
 .download {
     display: flex;
     width: 90%;
@@ -114,8 +125,8 @@ body {
 
 .app-download {
     height: 3rem;
-    width: 10rem;
-    background-size:contain;
+    width: 10.3rem;
+    background-size:cover;
 }
 
 .app-download:nth-child(1) {
@@ -126,6 +137,33 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
+footer {
+    height: 50px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom:5rem;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center  
+  }
+.line {
+    color: rgb(148, 147, 147);
+    padding: 0.6rem;
+    font-size: 12.5px;
+    line-height: 2;
+    
+}
+select {
+    color: rgb(148, 147, 147);
+    border: none;
+    background-color: rgb(253, 218, 221);;
+    text-align-last: center;  
+    font-size: 12.5px;
+  }
+
+
 @media (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
@@ -133,9 +171,7 @@ body {
 }
 
 @media (max-width: 650px) {
-    body {
-        background-color: #ffffff;
-    }
+  
 
     .instagram-wrapper {
         width: 90%;
@@ -152,4 +188,7 @@ body {
     .group {
         border: 1px solid transparent;
     }
+    footer{
+        text-align-last: center; 
+    }    
 }
