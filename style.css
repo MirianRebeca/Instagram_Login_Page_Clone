@@ -164,17 +164,16 @@ select {
   }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .instagram-wrapper {
         width: 90%;
-    }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 780px) {
   
 
     .instagram-wrapper {
-        width: 90%;
+        width: 80%;
     }
 
     .instagram-phone {
@@ -189,6 +188,9 @@ select {
         border: 1px solid transparent;
     }
     footer{
-        text-align-last: center; 
-    }    
+        text-align-last: center;
+        margin-top: 30px;
+        width: 85%;
+        
+    }   
 }
